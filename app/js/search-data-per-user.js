@@ -3,7 +3,7 @@
     test.beginTransaction();
 
     var csv = test.getCSV('search.csv');
-    var row = csv.get(csv.random());
+    var row = csv.get(test.getUserNum());
     var query = row.get("query");
 
     test.beginStep("Navigate to google.com");
